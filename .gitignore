@@ -1,6 +1,7 @@
 /text-api
 /api-gateway
 .qodo
+/node_modules
 business-registered/node_modules
 kafka/node_modules
 search-logs/node_modules

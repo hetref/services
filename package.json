@@ -1,0 +1,20 @@
+{
+  "name": "kafka-services",
+  "version": "1.0.0",
+  "description": "Kafka microservices - business-registered, search-logs, send-email",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:business\" \"npm run start:search\" \"npm run start:email\"",
+    "start:business": "cd business-registered && npm start",
+    "start:search": "cd search-logs && npm start", 
+    "start:email": "cd send-email && npm start",
+    "install:all": "npm install && cd business-registered && npm install && cd ../search-logs && npm install && cd ../send-email && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["kafka", "microservices", "business-registered", "search-logs", "send-email"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
