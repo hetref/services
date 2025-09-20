@@ -7,7 +7,7 @@ This project implements a microservices architecture using Apache Kafka for even
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   API Gateway   │    │  Business Reg.  │    │  Search Logs    │
-│   (Port 3001)   │    │   (Port 8000)   │    │   (Port 8002)   │
+│   (Port 3001)   │    │   (Port 8004)   │    │   (Port 8005)   │
 └─────────┬───────┘    └─────────┬───────┘    └─────────┬───────┘
           │                      │                      │
           └──────────────────────┼──────────────────────┘
@@ -146,7 +146,7 @@ npm start
 
 ### Business Registration
 
-**Endpoint:** `POST http://localhost:3001/api/business-registered`
+**Endpoint:** `POST http://localhost:3001/business-registered`
 
 **Request Body:**
 ```json
@@ -176,7 +176,7 @@ npm start
 ```json
 {
   "searchQuery": "restaurants near me",
-  "userId": "user123",
+
   "resultsCount": 15
 }
 ```

@@ -42,7 +42,7 @@ const sendWelcomeEmail = async (businessData) => {
             <p><strong>Business Name:</strong> ${businessData.businessName}</p>
             <p><strong>Business Type:</strong> ${businessData.businessType}</p>
             <p><strong>Registration Date:</strong> ${new Date(businessData.registrationDate).toLocaleDateString()}</p>
-            <p><strong>Status:</strong> ${businessData.status}</p>
+         
           </div>
           
           <p>Our team will review your registration and get back to you within 2-3 business days.</p>
